@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+    <h1> CIFP Aviles</h1>
 <meta charset="utf-8" />
 <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
 <style>
@@ -16,7 +17,7 @@ header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #727c60;
+            background-color: #c6e68d;
             padding: 20px;
         }
 
@@ -109,7 +110,7 @@ header {
 </head>
 <body>
     <header>
-        <img src="./img/logo.jpeg" alt="Logo">
+        <img src="./img/logo.jpeg" alt="Logo de la institución">
         <title>Pets home</title>
         <nav>
             <ul>
@@ -123,22 +124,30 @@ header {
 <div class="title">Contacto</div>
 <form action="" method="post">
 <p>
-<div >Nombre:</div> <input type="text"  />
+<div >Nombre:</div> 
+<label for="nombre">Nombre</label>
+<input  id="nombre" type="text"  />
 <br />
-<div >Apellidos:</div> <input type="text"  />
+<label for="apellidos">Apellidos</label>
+<div >Apellidos:</div> <input id="apellidos" type="text"  />
 <br />
-Gender:
+<fieldset>
+    <legend>Gender:</legend>
+<label for="gender-male">Hombre</label>
 <input type="radio" name="gender" value="Hombre" id="gender-male"/> 
+<label for="gender-female">Mujer</label>
 <input type="radio" name="gender" value="Mujer" id="gender-female" /> 
 <br />
+</fieldset>
 Animal favorito:
-<select name="animal favorito">
+ <label for="animal">Animal</label>
+<select id="animal" name="animal favorito">
 <option >Perro</option>
 <option >Gato</option>
 <option >Pez</option>
 </select>
 <br />
-<input type="submit"  />
+<input type="submit" title="subir" />
 </p>
 </form>
 </div>
