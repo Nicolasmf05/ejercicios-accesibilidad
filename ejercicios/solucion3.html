@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+  <title>Video HTML5 con Subtítulos</title>
+  <style>
+    body {
+      font-family: 'Lexend', sans-serif;
+      font-size: 12px;
+      display: flex;
+      justify-content: center;
+      background-color: #e4f3c7;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      text-align: center;
+    }
+    
+    .title {
+      font-size: 48px;
+      font-weight: bold;
+      color: #33372C;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      margin-top: 20px;
+    }
+
+    video {
+      width: 600px;
+      height: 400px;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1 class="title">HTML5 Video y Subtítulos</h1>
+    
+    <section aria-labelledby="video-description">
+      <p id="video-description">Este video es un ejemplo de HTML5 con controles de reproducción y subtítulos opcionales.</p>
+      <video controls aria-describedby="video-description">
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/friday.mp4" type="video/mp4">
+        <track label="Subtítulos en portugués" kind="subtitles" srclang="pt" src="./subtitles/friday.vtt" default />
+      </video>
+    </section>
+  </main>
+</body>
+</html>
